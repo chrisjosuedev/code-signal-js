@@ -1,5 +1,5 @@
 # my-code-signal-solutions
-My Solutions to Code Signal Exercises
+My Solutions (And others CodeSignal Users) to Code Signal Exercises
 
 ## Official Website
 
