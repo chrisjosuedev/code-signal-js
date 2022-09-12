@@ -5,6 +5,7 @@
     Given a ticket number n, determine if it's lucky or not
  */
 
+/** Solution #1 */
 function solution(n) {
     let halfNumber = String(n).length / 2;
 
@@ -20,6 +21,27 @@ function solution(n) {
 
     for (const secondValue of secondPair) {
         secondSum += parseInt(secondValue);
+    }
+
+    return firstSum === secondSum;
+}
+
+/** Solutions #2 */
+function solution2(n) {
+    const numbers = String(n).split('');
+    const numbersToInt = numbers.map(Number);
+
+    const halfNumber = numbersToInt.length / 2;
+
+    let firstSum = 0;
+    let secondSum = 0;
+
+    for (let i = 0; i < numbersToInt.length; i++) {
+        if (i >= halfNumber) {
+            secondSum += numbersToInt[i];
+        } else {
+            firstSum += numbersToInt[i];
+        }
     }
 
     return firstSum === secondSum;

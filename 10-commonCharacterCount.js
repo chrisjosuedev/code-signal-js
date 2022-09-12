@@ -33,7 +33,7 @@ function amountString(string, letter) {
 }
 
 
-/*** SOLUTION #1 */
+/*** SOLUTION #2 */
 
 /** CodeSignal User -> lifeofnations Solution */
 /** Regex and JS Methods */
@@ -43,7 +43,7 @@ function amountString(string, letter) {
  * then, with /[^!]/g regex, replace every character excepts "!", and get new string length.
 */
 
-function solution(s1, s2) {
+function solution2(s1, s2) {
     for (var i = 0; i < s1.length; i++) {
         s2 = s2.replace(s1[i], '!');
     }
